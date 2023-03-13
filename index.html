@@ -11,17 +11,24 @@
   <h1>Rock, Paper or Scissors?</h1>
   <p>
     <span class="circle" onclick="play('rock')">R</span>
-    <span class="circle">P</span>
-    <span class="circle">S</span>
+    <span class="circle" onclick="play('paper')">P</span>
+    <span class="circle" onclick="play('scissors')">S</span>
   </p>
   <a class="instruction"
    href="https://en.wikipedia.org/wiki/Rock_paper_scissors">RULES</a>
 
     <script>
+      
+        function say(myMessage){
+          var msg = new SpeechSynthesis(myMessage);
+          msg.text = "Hello World";
+          window.speechSynthesis.speak(msg);
+        }
 
         /* This is a simplified version of the game.
         The Computer ALWAYS picks ROCK.  
         Does the user's choose win,lose, or tie vs ROCK? */
+
         function play(user) {
             let result = "";
             if (user === 'rock') {
