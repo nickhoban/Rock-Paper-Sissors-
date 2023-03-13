@@ -16,3 +16,7 @@ body {
         border-radius: 50%;
         font-size:65 px;
     }
+
+.circle:hover {
+    background-color: gray;
+}
