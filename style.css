@@ -9,8 +9,10 @@ body {
 }
 
 .circle {
-        background: lightblue;
+        background: red;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 50%;
+        font-size:65 px;
     }
